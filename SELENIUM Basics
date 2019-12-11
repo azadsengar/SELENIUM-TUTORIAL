@@ -1,1 +1,46 @@
+                                          Basic Selenium Commands
+                                          
+  1.)  driver.get(String);
+    This method Loads a new web page in the current browser window. Accepts String as a parameter and returns nothing.
+    
+  2.)  String title = driver.getTitle();
+    This method fetches the Title of the current page. Accepts nothing as a parameter and returns a String value
+    
+    
+  3.)  String currenturl = driver.getCurrentUrl();
+      This method fetches the string representing the Current URL which is opened in the browser. Accepts nothing as a parameter and returns a String value.
+  
+  4.) String pagesource = driver.getPageSource();
+       This method returns the Source Code of the page. Accepts nothing as a parameter and returns a String value.
+       
+  5.)  driver.close();
+       This method Close only the current window the WebDriver is currently controlling. Accepts nothing as a parameter and returns nothing.
+       
+  6.) driver.quit();
+       This method Closes all windows opened by the WebDriver. Accepts nothing as a parameter and returns nothing.
+       
+  NOTE: The above listed all are the 'METHODS' within the WebDriver INTERFACE.
+  *****************************************************************************************************************************************
+  
+                                          FindElement Command:-
+                                          
+Driver.findElement
+Driver.findElements
+
+the above (Means findelements and element) two are also Interfaces like WebDriver
+*****************************************************************************************************************************************
+                                      
+                                        NAVIGATION COMMANDS
+                                       
+1.) driver.navigate().to(URL);
+    This command Loads a new web page in the current browser window. It accepts a String parameter and returns nothing
+    
+2.) driver.navigate().forward();
+    This command does the same operation as clicking on the Forward Button of any browser. It neither accepts nor returns anything.
+    
+3.) driver.navigate().back();
+    This method does the same operation as clicking on the Back Button of any browser. It neither accepts nor returns anything.
+    
+4.) driver.navigate().refresh();
+    This method Refresh the current page. It neither accepts nor returns anything.
 
