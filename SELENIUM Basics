@@ -30,17 +30,53 @@ Driver.findElements
 the above (Means findelements and element) two are also Interfaces like WebDriver
 *****************************************************************************************************************************************
                                       
-                                        NAVIGATION COMMANDS
+                                                 NAVIGATION COMMANDS
                                        
 1.) driver.navigate().to(URL);
-    This command Loads a new web page in the current browser window. It accepts a String parameter and returns nothing
+    This command (to method) Loads a new web page in the current browser window. It accepts a String parameter and returns nothing
     
 2.) driver.navigate().forward();
-    This command does the same operation as clicking on the Forward Button of any browser. It neither accepts nor returns anything.
+    This command (forward method) does the same operation as clicking on the Forward Button of any browser. It neither accepts nor           returns anything.
     
 3.) driver.navigate().back();
-    This method does the same operation as clicking on the Back Button of any browser. It neither accepts nor returns anything.
+    This method (back method) does the same operation as clicking on the Back Button of any browser. It neither accepts nor returns anything.
     
 4.) driver.navigate().refresh();
-    This method Refresh the current page. It neither accepts nor returns anything.
+    This method (refresh method) Refresh the current page. It neither accepts nor returns anything.
+****************************************************************************************************************************************
+
+                                                WebElement Commands
+                                                
+1.) WebElement element = driver.findElement(By.id("UserName"));
+    element.clear();
+    This Command (Clear method) clears the text entry element. EX- Textbox type.
+     
+2.) Sendkeys(), Click()  -> Writes and clicks the operation respectively.
+
+3.) boolean staus = driver.findElement(By.id("UserName")).isDisplayed();
+    This command (method .isDisplayed) determines if an element is currently being displayed or not. This accepts nothing as a parameter     but returns a  boolean value(true/false).
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
 
