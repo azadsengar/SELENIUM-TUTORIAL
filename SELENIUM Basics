@@ -56,12 +56,22 @@ the above (Means findelements and element) two are also Interfaces like WebDrive
 3.) boolean staus = driver.findElement(By.id("UserName")).isDisplayed();
     This command (method .isDisplayed) determines if an element is currently being displayed or not. This accepts nothing as a parameter     but returns a  boolean value(true/false).
     
+4.) boolean staus = driver.findElement(By.id("UserName")).isEnabled();
+    This determines if the element currently is Enabled or not? This accepts nothing as a parameter but returns boolean                     value(true/false).
+    
+5.) boolean staus = driver.findElement(By.id("Sex-Male")).isSelected();
+    Determine whether or not this element is selected or not. This accepts nothing as a parameter but returns boolean value(true/false).
+    
+6.) driver.findElement(By.id("SubmitButton")).submit();
+    This method works well/better than the click() if the current element is a form, or an element within a form. This accepts nothing       as a parameter and returns nothing.
+     
+7.) WebElement element = driver.findElement(By.xpath("anyLink"));
+    String linkText = element.getText();
+    This returns an innerText of the element, including sub-elements, without any leading or trailing whitespace.
     
     
     
-    
-    
-    
+
     
     
     
