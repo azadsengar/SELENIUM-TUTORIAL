@@ -6,7 +6,14 @@
 ******************************************************************************************************************************************
                                             EXPLICIT WAIT FOR ELEMENTS TO BE CLICKABLE
                                             
-(new WebDriverWait(driver, 100)).until(ExpectedConditions
-					.and(ExpectedConditions.elementToBeClickable(By.xpath(collectsalespage.getLoggedInUserID.get()))));
+(new WebDriverWait(driver, 100)).until(ExpectedConditions					.and(ExpectedConditions.elementToBeClickable(By.xpath("XPATH"))));
           
+******************************************************************************************************************************************
+					    JAVASCRIPT FOR CLICK OPERATION
+
+By byobject=By.xpath(xpath.trim());
+WebElement element=driver.findElement(byobject);
+JavascriptExecutor executor = (JavascriptExecutor)driver;
+executor.executeScript("arguments[0].click();", element);
+
 ******************************************************************************************************************************************
