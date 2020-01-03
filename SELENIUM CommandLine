@@ -17,3 +17,13 @@ JavascriptExecutor executor = (JavascriptExecutor)driver;
 executor.executeScript("arguments[0].click();", element);
 
 ******************************************************************************************************************************************
+					    CODE TO SWITCH IN DIFFERENT FRAMES AND WINDOWS
+					   
+String winHandleBefore = driver.getWindowHandle();
+for(String winHandle : driver.getWindowHandles())
+   {  
+   driver.switchTo().window(winhandle);
+   }
+   
+Note:- If it is Frame then replace window with the "frame"
+******************************************************************************************************************************************
