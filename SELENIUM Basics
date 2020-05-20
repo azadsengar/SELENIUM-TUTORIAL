@@ -68,7 +68,10 @@ the above (Means findelements and element) two are also Interfaces like WebDrive
 7.) WebElement element = driver.findElement(By.xpath("anyLink"));
     String linkText = element.getText();
     This returns an innerText of the element, including sub-elements, without any leading or trailing whitespace.
-    
+****************************************************************************************************************************************
+
+
+
     
     
 
