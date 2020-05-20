@@ -70,6 +70,11 @@ the above (Means findelements and element) two are also Interfaces like WebDrive
     This returns an innerText of the element, including sub-elements, without any leading or trailing whitespace.
 ****************************************************************************************************************************************
 
+                                                PageLoad TimeOuts code
+                                                
+driver.manage().timeouts().pageLoadTimeout(50,TimeUnit.SECONDS);
+****************************************************************************************************************************************
+
 
 
     
