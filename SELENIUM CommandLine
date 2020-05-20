@@ -37,3 +37,21 @@ ChromeOptions options = new ChromeOptions();
 	
 NOTE:- Here, we need to Initialize the webDriver in the above way
 ****************************************************************************************************************************************
+
+					  How to determine total no. of Iframes
+					  
+JavascriptExecutor exe = (JavascriptExecutor) driver;
+ Integer numberOfFrames = Integer.parseInt(exe.executeScript("return window.length").toString());
+ System.out.println("Number of iframes on the page are " + numberOfFrames);
+ 
+ //By finding all the web elements using iframe tag
+ List<WebElement> iframeElements = driver.findElements(By.tagName("iframe"));
+ System.out.println("The total number of iframes are " + iframeElements.size());
+ ***************************************************************************************************************************************
+ 
+ 					  Methos to switch to a particular Iframe
+					  
+switchTo.frame(int frameNumber): Pass the frame index and driver will switch to that frame.
+switchTo.frame(string frameNameOrId): Pass the frame element Name or ID and driver will switch to that frame.
+switchTo.frame(WebElement frameElement): Pass the frame web element and driver will switch to that frame.
+****************************************************************************************************************************************
