@@ -55,3 +55,23 @@ switchTo.frame(int frameNumber): Pass the frame index and driver will switch to 
 switchTo.frame(string frameNameOrId): Pass the frame element Name or ID and driver will switch to that frame.
 switchTo.frame(WebElement frameElement): Pass the frame web element and driver will switch to that frame.
 ****************************************************************************************************************************************
+
+					  ACTION CLASS
+					  
+1.) Right click:-
+		Actions actions = new Actions(driver);
+		WebElement webElement = driver.findElement(Any By strategy & locator);
+		actions.contextClick(webElement).perform(); 
+		
+2.) 
+
+
+
+
+
+
+
+
+
+ 
+
