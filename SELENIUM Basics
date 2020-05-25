@@ -75,6 +75,9 @@ the above (Means findelements and element) two are also Interfaces like WebDrive
 driver.manage().timeouts().pageLoadTimeout(50,TimeUnit.SECONDS);
 ****************************************************************************************************************************************
 
+                                                Code to accept alert
+  driver.switchTo().alert().accept();
+  **************************************************************************************************************************************
 
 
     
