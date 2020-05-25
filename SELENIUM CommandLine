@@ -63,10 +63,25 @@ switchTo.frame(WebElement frameElement): Pass the frame web element and driver w
 		WebElement webElement = driver.findElement(Any By strategy & locator);
 		actions.contextClick(webElement).perform(); 
 		
-2.) 
-
-
-
+2.) Double Click:-
+		Actions actions = new Actions(driver);
+		WebElement webElement = driver.findElement(Any By strategy & locator);
+		actions.doubleClick(webElement).perform(); 
+		
+3.) Drag & Drop:-There are two methods that action class provide for drag and drop, and they are:-
+		dragAndDrop(WebElementsource, WebElement target)
+		dragAndDropBy(WebElementsource, int xOffset, int yOffset) 
+		
+		Code to drag and drop:-
+		Actions actions = new Actions(driver);
+	        WebElement source = driver.findElement(Any By strategy & locator);
+         	WebElement target = driver.findElement(Any By strategy & locator); 
+		actions.dragAndDrop(source,target).perform(); 
+		
+4.) Mouse Hover Action:-
+		Actions actions = new Actions(driver);
+		WebElement webElement = driver.findElement(Any By strategy & locator);
+		actions.moveToElement(target).perform();
 
 
 
