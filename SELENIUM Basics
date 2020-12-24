@@ -78,6 +78,25 @@ driver.manage().timeouts().pageLoadTimeout(50,TimeUnit.SECONDS);
                                                 Code to accept alert
   driver.switchTo().alert().accept();
   **************************************************************************************************************************************
+  
+                                                Fluent wait
+                                                
+  Wait wait = new FluentWait(driver)
+ 
+    .withTimeout(30, SECONDS)
+ 
+    .pollingEvery(5, SECONDS)
+ 
+    .ignoring(NoSuchElementException.class);
+ 
+  WebElement foo = wait.until(new Function() {
+ 
+    public WebElement apply(WebDriver driver) {
+ 
+    return driver.findElement(By.id("foo"));
+ 
+    }
+                                                 
 
 
     
